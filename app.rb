@@ -39,6 +39,10 @@ class App < Sinatra::Base
   "#{@phrase}"
   end
 
+  get /:operation/:number1/:number2 do 
+    @opp = :operation
+    @num1 = :number1
+    @num2 = :number2
 end
 
 
