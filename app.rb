@@ -20,13 +20,13 @@ class App < Sinatra::Base
     @number = params[:number]
     @phrase = params[:phrase]
     @repeated_phrase = [ ]
-    loop do 
-      until @times_through = @number
-      @phrase << @repeated_phrase
+   until @times_through == @number
+      @repeated_phrase << @phrase
       @times_through += 1
       end 
-    end 
-  return @repeated_phrase
+  
+ "#{@repeated_phrase}"
+  
   end 
 
 end
