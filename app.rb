@@ -28,8 +28,15 @@ class App < Sinatra::Base
  "#{@repeated_phrase}"
   
   end 
-  get '/say/:word1/:word2/:word3' do
-    
+  get '/say/:word1/:word2/:word3/:word4/:word5' do
+    @word1 = params[:word1]
+    @word2 = params[:word2]
+    @word3 = params[:word3]
+    @word4 = params[:word4]
+    @word5 = params[:word5] 
+    @phrase = "#{@word1} #{@word2} #{@word3} #{@word4} #{@word5}"
+  end
+  "#{@phrase}"
   end
 
 end
