@@ -28,5 +28,11 @@ class App < Sinatra::Base
  "#{@repeated_phrase}"
   
   end 
+  get '/say/:word1/:word2/:word3' do
+    
+  end
 
 end
+
+
+ 
